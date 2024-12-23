@@ -17,6 +17,9 @@ all-features = true
 [package.metadata.playground]
 features = ["all"]
 
+[lints.rust]
+unexpected_cfgs = { level = "warn", check-cfg = ['cfg(nightly)'] }
+
 [features]
 default = []
 all = ["json"]
